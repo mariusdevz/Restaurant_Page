@@ -425,7 +425,7 @@ footer p {
 
 @media (max-width: 414px) {
   footer {
-    height: 80vh;
+    height: 60vh;
   }
   .rustic-desc,
   .find {
@@ -463,7 +463,7 @@ footer p {
   }
 
   footer {
-    height: 70vh;
+    height: 60vh;
   }
   .rustic-desc,
   .find {
@@ -495,7 +495,7 @@ footer p {
 
 @media (max-width: 329px) {
   footer {
-    height: 70vh;
+    height: 50vh;
   }
   .rustic-desc,
   .find {
