@@ -240,6 +240,7 @@ h2 {
 
 footer p {
   font-size: 15px;
+  color: gray;
 }
 
 .copyright {
@@ -252,6 +253,38 @@ footer p {
   font-size: 20px;
   font-weight: bold;
   margin: 15px 0 0 0;
+}
+
+@media (max-width: 329px) {
+  footer {
+    height: 70vh;
+  }
+  .rustic-desc,
+  .find {
+    font-size: 15px;
+    gap: 10px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  .rustic-desc p {
+    text-align: center;
+  }
+
+  .all-footer-content {
+    gap: 40px;
+  }
+
+  .follow span img {
+    width: 20px;
+  }
+
+  footer p {
+    font-size: 11px;
+    color: gray;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -267,7 +300,7 @@ footer p {
   }
 
   footer {
-    height: 55vh;
+    height: 60vh;
   }
   .caption {
     font-size: 18px;
