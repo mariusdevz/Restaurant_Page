@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  height: 70vh;
+  background-image: url("images/qui-nguyen-cnTdKzMOBns-unsplash.jpg");
+  background-blend-mode: multiply;
+  background-color: #ccc;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 250px;
+  font-family: Georgia, sans-serif;
+}
+
+.harmburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.harmburger span {
+  background-color: white;
+  height: 2px;
+  width: 25px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.intro-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto 0;
+}
+
+header p {
+  text-align: center;
+  font-size: 62px;
+  width: 35%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+nav .btn button {
+  background-color: #0ceb2aab;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    opacity 0.2s,
+    transform 0.1s;
+}
+
+nav .btn button:hover {
+  background-color: #0ceb2a8a;
+  opacity: 0.9;
+  transform: scale(1.04);
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.f-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-section article:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: beige;
+  padding: 90px 0;
+}
+
+.f-section article:nth-child(1) .resto-description {
+  width: 40%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.dishes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  padding: 0 0 80px 0;
+}
+
+.dishes h2 {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.dishes-container figure {
+  background-color: gray;
+  width: 200px;
+}
+
+.dish-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition:
+    transform 0.4s,
+    box-shadow 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dish-img:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dish-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  width: 80%;
+}
+
+.t-section {
+  background-color: azure;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.t-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  width: 80%;
+}
+
+.img-big {
+  grid-column: span 2;
+}
+
+footer {
+  background-color: #030320;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 40vh;
+  padding: 20px 70px;
+  overflow: hidden;
+  font-family: Georgia, sans-serif;
+}
+
+.all-footer-content {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  padding: 60px 0;
+}
+
+.follow span img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.icon-container {
+  display: flex;
+  gap: 20px;
+}
+
+.line {
+  height: 2px;
+  width: 100%;
+  background-color: gray;
+  margin: 40px 0;
+}
+
+.rustic-desc,
+.find {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.follow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+.copyright {
+  text-align: center;
+  color: gray;
+  font-size: 18px;
+}
+
+.caption {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0 0 0;
+}
+
+@media (max-width: 1200px) {
+  .intro-container {
+    line-height: 35px;
+    font-size: 17px;
+  }
+
+  .f-section article:nth-child(1) .resto-description {
+    width: 85%;
+    line-height: 25px;
+    font-size: 17px;
+  }
+
+  footer {
+    height: 55vh;
+  }
+  .caption {
+    font-size: 18px;
+    margin: 5px 0 0 0;
+  }
+
+  figcaption {
+    font-size: 15px;
+  }
+
+  .dish-img {
+    height: 200px;
+  }
+
+  header p {
+    width: 70%;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .harmburger {
+    display: flex;
+  }
+
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(3, 3, 32, 0.9);
+  }
+
+  .intro-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .book {
+    display: none;
+  }
+
+  header p {
+    text-align: center;
+    font-size: 32px;
+    width: 70%;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .f-section article:nth-child(1) {
+    background-color: beige;
+    padding: 90px 0;
+  }
+
+  .f-section article:nth-child(1) .resto-description {
+    width: 80%;
+    line-height: 25px;
+    font-size: 17px;
+  }
+
+  .dish-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+  }
+
+  .t-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 80%;
+  }
+
+  .all-footer-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 20px 0 20px;
+  }
+
+  .rustic-desc,
+  .find {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .rustic-desc p {
+    text-align: center;
+  }
+
+  footer {
+    background-color: #030320;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 45vh;
+    padding: 20px 30px;
+    font-family: arial, sans-serif;
+  }
+
+  .line {
+    height: 2px;
+    width: 100%;
+    background-color: gray;
+    margin: 25px 0;
+  }
+
+  .copyright {
+    font-size: 15px;
+  }
+}
